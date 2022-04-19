@@ -64,16 +64,6 @@ for url in url_list:
     
     final_df += [df]
 
-#baby_name_df = pd.concat(final_df)
-#print(baby_name_df.column.dtype)
-#print(baby_name_df.sort_values('likes'))
-#baby_name_pd = pd.concat(final_df)
-#print(type(baby_name_pd))
-#baby_name_pd['likes'] = pd.to_numeric(baby_name_pd['likes'])
-#final_names = baby_name_pd.sort_values(['likes'], ascending=[False])
-#print(type(final_names))
-#final_names.to_csv('babyname.csv', index = False)
-
 baby_name_pd = pd.concat(final_df)
 print(type(baby_name_pd))
 baby_name_pd['likes'] = pd.to_numeric(baby_name_pd['likes'])
